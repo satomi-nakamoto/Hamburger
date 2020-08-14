@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+//基本
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+//フロントページ
+.hero-img {
+  z-index: -1;
+
+  .c-hero {
+    height: 100%;
+    object-fit: cover;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  .c-heroBig {
+    display: none;
+
+    @include tab {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.branch-img {
+  z-index: -1;
+
+  .takeOut-img {
+    height: 100%;
+    object-fit: cover;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  .takeOut-big-img {
+    display: none;
+
+    @include tab {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .eatIn-img {
+    height: 100%;
+    object-fit: cover;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  .eatIn-big-img {
+    display: none;
+
+    @include tab {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//archive
+
+.c-archive__ul,
+.c-number__nav {
+  img {
+    width: 18px;
+    height: 17px;
+align-self: center;
+  }
+}
+
+.c-cCard {
+
+  @include tab {
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+//single
+
+.c-set04 {
+  width: 80%;
+  justify-self: center;
+}

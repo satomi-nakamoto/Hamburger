@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+// ==========================================================================
+// Foundation
+// ==========================================================================
+@import "src/foundation/_reset";
+@import "src/foundation/_base";
+@import "src/foundation/media_queries";
+// @import "src/foundation/variable";
+// ==========================================================================
+// Layout
+// ==========================================================================
+@import "src/layout/_l-mainGrid";
+@import "src/layout/_l-subGrid";
+@import "src/layout/_l-layout";
+// ==========================================================================
+// Object
+// ==========================================================================
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+@import "src/object/component/c-button";
+@import "src/object/component/c-link";
+@import "src/object/component/c-img";
+@import "src/object/component/c-nav";
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+@import "src/object/project/p-access";
+@import "src/object/project/p-title";
+// @import "src/object/project/_profile";
+@import "src/object/project/p-archive";
+@import "src/object/project/p-search";
+@import "src/object/project/p-form";
+@import "src/object/project/p-table";
+@import "src/object/project/p-sidebar";
+// @import "src/object/project/p-list";
+@import "src/object/project/p-branch";
+@import "src/object/project/p-single";
+
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+// @import "src/object/utility/_align";
+@import "src/object/utility/_u-styling";
+@import "src/object/utility/_u-margin";
+@import "src/object/utility/_u-background";
+// @import "src/object/utility/_size";
+@import "src/object/utility/_u-text";
+
+
+
+
+
+
+// //  ここからpage.html 
+
+// .container {
+
+//   .shop_container-header {
+//     background-image: url(images/shop.png);
+//     width: 335px;
+//     height: 224px;
+//     margin: 0 auto;
+//     display: block;
+//   }
+
+//   & h1 {
+//     color: #ffffff;
+//     font-size: 36px;
+//     // font-weight: 100;
+//     padding-top: 100px;
+//     padding-left: 20px;
+//   }
+// }
+
+
+// ここから menu.html
+// .close-menu {
+//   float: right;
+//   margin-top: 15px;
+//   margin-right: 80px;
+// }
+
+// .hamburger-menu {
+//   background-color: #F2EDE9;
+//   color: #707070;
+//   width: 328px;
+//   height: 1826px;
+
+//   & h3 {
+//     font-size: 24px;
+//     font-weight: normal;
+//     letter-spacing: 1.2;
+//     padding-top: 20px;
+//     padding-left: 50px;
+//   }
+
+//   & h3.burger {
+//     padding-top: 200px;
+//   }
+
+//   & ul>li {
+//     list-style-type: none;
+//     font-size: 20px;
+//     font-weight: 100;
+//     padding-left: 65px;
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//   }
+// }

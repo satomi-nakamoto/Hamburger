@@ -1,0 +1,50 @@
+.p-main__header, .p-shopMain__header {
+  height: 225px;
+
+  @include tab {
+    height: 500px;
+  }
+}
+
+.p-quote {
+  padding: 15px;
+}
+
+.p-list01 {
+  padding-top: 20px;
+}
+
+.p-list02 {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.p-list03 {
+  padding-top: 20px;
+}
+
+.p-list04 {
+  padding-top: 50px;
+  text-indent: -1em;
+}
+
+.p-list05 {
+  padding-top: 20px;
+}
+
+.p-list06 {
+  padding-top: 20px;
+  text-indent: -1em;
+}
+
+.p-codeSet {
+  padding: 40px 80px 40px 0;
+}
+
+.p-caption {
+  display: none;
+
+  @include tab {
+    display: inline-block;
+  }
+}

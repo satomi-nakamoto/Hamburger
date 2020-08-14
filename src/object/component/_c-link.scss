@@ -1,0 +1,12 @@
+.c-quote a, span {
+text-decoration: underline;
+
+&:hover {
+  color: #fff;
+  background-color: rgb(40, 40, 94);
+}
+
+&:visited {
+  color: gray;
+}
+}

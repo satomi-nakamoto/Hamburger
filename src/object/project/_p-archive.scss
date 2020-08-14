@@ -1,0 +1,109 @@
+.p-cheese__header {
+  height: 283px;
+
+  @include tab {
+    position: relative;
+  }
+
+  & h1 {
+    padding-top: 120px;
+    padding-left: 30px;
+
+    @include tab {
+      padding-top: 110px;
+      padding-left: 80px;
+    }
+  }
+
+  & p {
+    padding-top: 15px;
+    padding-left: 30px;
+
+    @include tab {
+      position: absolute;
+      top: 125px;
+      left: 250px;
+    }
+  }
+}
+
+.p-detailed {
+
+  @include pc {
+    padding-left: var(--side);
+    padding-right: var(--side);
+  }
+
+  & h2 {
+    padding-top: 33px;
+  }
+
+  & p {
+    padding-top: 33px;
+  }
+}
+
+.p-various__section {
+
+  @include pc {
+    padding-left: var(--side);
+    padding-right: var(--side);
+  }
+
+  h3, h4 {
+    padding-top: 35px;
+    padding-left: 20px;
+
+    @include tab {
+      padding-left: 30px;
+    }
+
+    @include pc {
+      padding-left: 20px;
+    }
+  }
+
+  & p {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+
+    @include tab {
+      padding-left: 30px;
+      padding-right: 18px;
+      text-align: justify;
+    }
+
+    @include pc {
+      padding-left: 20px;
+    }
+  }
+
+  & p:nth-of-type(2) {
+    padding-left: 0;
+  }
+
+}
+
+.p-archive__nav,
+.p-archive__ul {
+  padding-top: 35px;
+  padding-bottom: 25px;
+
+  & li.prev {
+    float: left;
+    padding-left: 15px;
+  }
+
+  & li.next {
+    float: right;
+    padding-right: 15px;
+  }
+}
+
+.p-archive__ul {
+
+  @include tab {
+    display: none;
+  }
+}

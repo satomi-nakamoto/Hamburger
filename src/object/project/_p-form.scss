@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+//フロントページ
+
+form {
+  width: 520px;
+  height: 46px;
+
+  @include pc {
+    width: 310px;
+    height: 35px;
+    padding-top: 5px;
+  }
+
+  @include wide {
+    width: 542px;
+    height: 46px;
+  }
+}
+
+.p-search-box {
+  width: 230px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+
+  @include tab {
+    width: 340px;
+  }
+
+  @include pc {
+    width: 230px;
+    height: 35px;
+  }
+
+  @include wide {
+    width: 350px;
+    height: 46px;
+  }
+}
+
+.p-search-btn {
+  width: 70px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  opacity: 0.8;
+
+  @include tab {
+    width: 136px;
+  }
+
+  @include pc {
+    width: 60px;
+    height: 35px;
+  }
+
+  @include wide {
+    width: 136px;
+    height: 46px;
+  }
+}

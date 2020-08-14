@@ -1,0 +1,25 @@
+.c-number__nav {
+  display: none;
+
+  @include tab {
+    display: grid;
+  }
+}
+
+.c-num {
+  border: 1px solid #707070;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 2;
+}
+
+.c-number__nav {
+  p:nth-of-type(2) {
+    background-color: #3C2B1C;
+    color: #fff;
+  }
+}
+
+
+

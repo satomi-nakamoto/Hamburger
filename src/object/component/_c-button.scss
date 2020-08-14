@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+  .c-menu-btn {
+    
+    @include pc {
+      display: none;
+    }
+  }
+
+
+.sidebar {
+  
+  .c-menu-btn-close {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 32px;
+    height: 32px;
+
+    @include pc {
+      display: none;
+    }
+  }
+}
+
+//archive
+
+.c-search-btn {
+  opacity: 0.8;
+}
+
+.c-various__section {
+
+  & button.u-detail__btn {
+    border: 0.5px solid #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    height: 45px;
+    width: 170px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+
+//single 
+
+.c-btnBig button {
+    display: block;
+    height: 80px;
+    border-radius: 20px;
+    background: -moz-linear-gradient(top, #f2ede9, #ded8d3);
+    background: -webkit-linear-gradient(top, #f2ede9, #ded8d3);
+    background: linear-gradient(to bottom, #f2ede9, #ded8d3);
+
+  }
+
+  .c-btnBig {
+    display: grid;
+    
+    & button {
+      width: 100%;
+
+      @include tab {
+        width: 60%;
+      }
+    }
+    }
