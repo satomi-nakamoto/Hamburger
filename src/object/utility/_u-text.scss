@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+//****共通
+header {
+  color: #707070;
+  ;
+}
+
+.frontPage-section {
+  color: #fff;
+}
+
+.u-header__title,
+.u-logo {
+  font-family: 'Roboto', sans-serif;
+  color: #707070;
+  font-size: 40px;
+  font-weight: 700;
+
+  @include wide {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1510px) {
+  .u-header__title, .u-logo {
+    font-size: calc(40px + 24 * (100vw - 768px) / 742);
+  }
+}
+
+
+// .frontPage-header {
+.u-menu-btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #707070;
+
+  @include tab {
+    font-size: 32px;
+  }
+}
+
+// }
+
+.u-search-btn {
+  font-size: 16px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 100;
+
+  @include pc {
+    font-size: 1.5vw;
+  }
+}
+
+//****フロントページ
+
+.u-frontPage__sub h2 {
+  color: #fff;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2.25rem; //36px
+  font-weight: 100;
+
+  @include pc {
+    font-size: 3vw;
+  }
+}
+
+.u-branchMenu {
+
+  & h2 {
+    font-size: 2.562rem; //41px
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    line-height: 0.7;
+
+    & span {
+      font-weight: 300;
+    }
+
+    @include tab {
+      font-size: 2.75rem; //44px
+    }
+
+    @include pc {
+      font-size: 3.625rem; //58px
+    }
+
+    @include wide {
+      font-size: 5rem; //80px
+    }
+  }
+
+  & dl>dt.title {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 20px;
+    text-align: left;
+
+    @include pc {
+      font-size: 22px;
+    }
+  }
+
+  & dl>dd.text {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+
+    @include pc {
+      font-size: 14px;
+    }
+  }
+
+}
+
+.u-access {
+  font-family: 'M PLUS 1p', sans-serif;
+
+  & h2 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-left: 30px;
+    z-index: 2;
+
+    @include pc {
+      font-size: 36px;
+    }
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 2.3;
+    letter-spacing: 1.2;
+    padding: 30px;
+
+    @include pc {
+      line-height: 1.2;
+      overflow: hidden;
+    }
+  }
+}
+
+.footer {
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #ffffff;
+  text-align: center;
+
+  & h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 45px;
+    letter-spacing: 2.0;
+  }
+
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 40px;
+  }
+}
+
+.sidebar {
+
+  font-size: 16px;
+
+  .u-menu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.125rem;
+    font-weight: 700;
+
+    @include pc {
+      font-size: 2.25rem;
+    }
+  }
+
+  .u-menu-contents {
+    font-family: 'M PLUS 1p', sans-serif;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1.2;
+  }
+
+  & ul>li {
+    font-size: 1.25rem;
+    font-weight: 100;
+  }
+}
+
+//*****archive
+
+.u-cheese__header,
+.u-search__header {
+  color: #ffffff;
+
+  & h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+
+    @include tab {
+      font-size: 60px;
+    }
+  }
+
+  & p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 16px;
+  }
+}
+
+.u-detailed {
+  font-family: 'M PLUS 1p', sans-serif;
+
+  & h2 {
+    font-size: 27px;
+    font-weight: 400;
+
+    @include tab {
+      font-weight: 700;
+    }
+  }
+
+  & p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+    // text-align: justify;
+
+    @include tab {
+      font-weight: 400;
+    }
+  }
+}
+
+.u-various__section {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+
+  & h3 {
+    font-size: 20px;
+  }
+
+  & h4 {
+    font-size: 16px;
+  }
+
+  & p {
+    font-size: 16px;
+    letter-spacing: 1.2;
+    line-height: 1.8;
+  }
+
+  & button.u-detail__btn {
+    font-size: 16px;
+  }
+}
+
+.u-archive__nav,
+.u-archive__ul {
+  font-size: 18px;
+}
+
+.u-number__nav {
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    align-self: center;
+  }
+}
+
+//single/page
+
+#single {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 16px;
+}
+
+.u-main__header, .u-shopMain__header {
+  display: grid;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #fff;
+    align-self: center;
+
+    @include tab {
+      font-size: 50px;
+    }
+  }
+}
+
+.u-main__detailed {
+  color: #3C2A10;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+
+    @include tab {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    line-height: 1.8;
+  }
+}
+
+.u-titleH > h3, h4, h5, h6 {
+  font-size: 20px;
+  font-weight: 400;
+
+  &:first-child {
+    font-size: 24px;
+
+     @include tab {
+       font-size: 28px;
+     }
+  }
+}
+
+.u-quote {
+  line-height: 1.8;
+}
+
+.u-list {
+    line-height: 1.5;
+}
+
+.u-hamburgerSet__h {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.u-codeSet {
+  line-height: 1.2;
+}
+
+.u-caption {
+  font-weight: 700;
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+// .frontPage-header {
+  .u-menu-btn {   
+    border-style: hidden;
+  }
+  //Menuを押したときの線を消す
+  .u-menu-btn:focus {
+    outline: 0;
+  }
+// }
+
+.u-branchMenu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar {
+  & ul>li {
+    list-style-type: none;
+  }
+
+  .u-menu-btn-close {
+    border: none;
+  }
+}
+
+.u-detail__btn:focus {
+outline: 0;
+}
+
+//single
+
+.u-list > ul {
+  list-style-type: none;
+}

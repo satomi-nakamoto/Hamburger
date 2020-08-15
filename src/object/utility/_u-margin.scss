@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+//****共通
+
+.u-header__title {
+  @include pc {
+    margin-left: 25px;
+  }
+}
+
+//****フロントページ
+
+.frontPage-header {
+  .u-menu-btn {
+    margin-top: 15px;
+  }
+}
+
+.u-search-form {
+  margin-left: 10px;
+
+  @include pc {
+    margin-bottom: -8px;
+  }
+}
+
+.u-search-box {
+  margin-right: 10px;
+}
+
+.u-branchMenu {
+  & h2 {
+    margin-bottom: 200px;
+  }
+}
+
+.sidebar {
+  .u-hamburgerMenu {
+    margin-left: calc(100vw - 328px);
+
+    @include ssp {
+      margin-left: 50px;
+    }
+
+    @include pc {
+      margin-left: 0px;
+    }
+  }
+
+  & h3 {
+    padding-left: 50px;
+    margin: 20px 0;
+  }
+}
+
+//archive
+
+.u-cheese__container,
+.u-search__container {
+  margin-bottom: 40px;
+}
+
+.u-cheese__header,
+.u-search__header,
+.u-main__header,
+.u-shopMain__header {
+  margin: 0 calc(var(--side) * -1);
+}
+
+.u-archive__nav {
+
+  @include tab {
+    margin-top: 70px;
+    margin-bottom: 15px;
+  }
+
+}
+
+//single 
+
+.u-main__header, .u-shopMain__header {
+  h1 {
+    margin-left: var(--side);
+  }
+}
+
+.u-main__detailed {
+
+  h2 {
+    margin: 40px 0;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.u-titleH {
+  margin-bottom: 20px;
+}
+
+.u-blockquote {
+  margin-bottom: 40px;
+}
+
+.u-p__blockquote {
+  margin-bottom: 20px;
+}
+
+.u-hamburgerSet {
+  margin: 40px 0;
+}
+
+.u-list {
+  margin: 40px calc(var(--side) - 1em);
+}
+
+table {
+  margin: 40px 0;
+}
+
+.u-btnBig {
+  margin-bottom: 100px;
+  opacity: 0.8;
+
+  @include tab {
+    margin-bottom: 0;
+  }
+}
+
+.u-caption {
+  padding: 50px 0;
+}
